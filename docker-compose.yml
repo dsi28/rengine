@@ -141,11 +141,6 @@ services:
     networks:
       - rengine_network
 
-    installTest:
-      - image: my-image:latest
-      - command: ["./install.sh"]      
-    
-
 networks:
   rengine_network:
 
