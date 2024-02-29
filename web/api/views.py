@@ -2664,3 +2664,12 @@ class VulnerabilityViewSet(viewsets.ModelViewSet):
 					print(e)
 
 		return qs
+	
+
+class TestVM(APIView):
+	def get(self, request, format=None):
+		req = self.request
+		response = {}
+		response['status'] = True
+		response['content'] = "I am alive!"	
+		return Response(response)

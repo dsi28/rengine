@@ -235,6 +235,10 @@ urlpatterns = [
         'action/create/project',
         CreateProjectApi.as_view(),
         name='create_project'),
+    path(
+        'vm_test/',
+        TestVM.as_view(),
+        name='vm_test')
 ]
 
 urlpatterns += router.urls
